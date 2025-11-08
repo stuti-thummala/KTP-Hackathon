@@ -3,19 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: 0, 0, 0;
-  }
+  color-scheme: dark;
+  --midnight-900: 4, 7, 32;
+  --midnight-950: 2, 3, 22;
+  --text-foreground: 233, 235, 255;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  color: rgb(var(--text-foreground));
+  background: radial-gradient(circle at top, rgba(36, 71, 255, 0.2), transparent 45%),
+    radial-gradient(circle at 80% 20%, rgba(255, 45, 149, 0.2), transparent 50%),
+    rgb(var(--midnight-950));
   font-family: var(--font-inter);
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: rgba(255, 45, 149, 0.35);
+  color: #f8f9ff;
 }
