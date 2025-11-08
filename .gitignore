@@ -1,0 +1,73 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+.env
+.env.*
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# FastAPI / Uvicorn
+uvicorn.log
+
+# Node / Next.js
+node_modules/
+.npm/
+.pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.next/
+/out/
+build/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Logs
+*.log
+logs/
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Deployment
+.vercel/
+
+# Misc
+*.pem
+*.env.local
+*.env.development
+*.env.test
+*.env.production
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+~$*
+
+# Calibration / Gaze artifacts
+gaze_data/
+heatmaps/
+
+# Video artifacts
+*.mp4
+*.mov
+*.avi
+public/video.mp4
