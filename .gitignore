@@ -37,6 +37,9 @@ coverage/
 *.log
 logs/
 
+# Python env metadata
+.python-version
+
 # IDEs / Editors
 .vscode/
 .idea/
